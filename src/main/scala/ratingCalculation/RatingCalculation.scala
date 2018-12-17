@@ -1,0 +1,5 @@
+package ratingCalculation
+
+object RatingCalculation {
+
+}

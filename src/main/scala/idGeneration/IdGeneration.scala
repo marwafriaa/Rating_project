@@ -1,0 +1,6 @@
+package idGeneration
+
+class IdGeneration {
+
+
+}

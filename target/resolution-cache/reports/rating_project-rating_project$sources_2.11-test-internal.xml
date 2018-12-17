@@ -7,8 +7,251 @@
 		revision="0.1"
 		conf="test-internal"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20181217121306"/>
+		date="20181217161130"/>
 	<dependencies>
+		<module organisation="de.ruedigermoeller" name="fst">
+			<revision name="2.50" status="release" pubdate="20170410200858" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://ruedigermoeller.github.io/fast-serialization/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="187">
+				<license name="Apache License 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="4551" time="0" location="C:\Users\MARWA\.ivy2\cache\de.ruedigermoeller\fst\ivy-2.50.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/de/ruedigermoeller/fst/2.50/fst-2.50.pom"/>
+				<caller organisation="rating_project" name="rating_project$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="2.50" rev-constraint-default="2.50" rev-constraint-dynamic="2.50" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="fst" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="253419" time="0" location="C:\Users\MARWA\.ivy2\cache\de.ruedigermoeller\fst\srcs\fst-2.50-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/de/ruedigermoeller/fst/2.50/fst-2.50-sources.jar"/>
+					</artifact>
+					<artifact name="fst" type="jar" ext="jar" status="no" details="" size="387689" time="0" location="C:\Users\MARWA\.ivy2\cache\de.ruedigermoeller\fst\jars\fst-2.50.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/de/ruedigermoeller/fst/2.50/fst-2.50.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.cedarsoftware" name="java-util">
+			<revision name="1.9.0" status="release" pubdate="20140224063741" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/jdereg/java-util" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="188">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3298" time="0" location="C:\Users\MARWA\.ivy2\cache\com.cedarsoftware\java-util\ivy-1.9.0.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/cedarsoftware/java-util/1.9.0/java-util-1.9.0.pom"/>
+				<caller organisation="rating_project" name="rating_project$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="1.9.0" rev-constraint-default="1.9.0" rev-constraint-dynamic="1.9.0" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="java-util" type="jar" ext="jar" status="no" details="" size="58487" time="0" location="C:\Users\MARWA\.ivy2\cache\com.cedarsoftware\java-util\jars\java-util-1.9.0.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/cedarsoftware/java-util/1.9.0/java-util-1.9.0.jar"/>
+					</artifact>
+					<artifact name="java-util" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="42932" time="0" location="C:\Users\MARWA\.ivy2\cache\com.cedarsoftware\java-util\srcs\java-util-1.9.0-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/cedarsoftware/java-util/1.9.0/java-util-1.9.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.cedarsoftware" name="json-io">
+			<revision name="2.5.1" status="release" pubdate="20140220044530" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/jdereg/json-io" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="189">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3167" time="0" location="C:\Users\MARWA\.ivy2\cache\com.cedarsoftware\json-io\ivy-2.5.1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/cedarsoftware/json-io/2.5.1/json-io-2.5.1.pom"/>
+				<caller organisation="rating_project" name="rating_project$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="2.5.1" rev-constraint-default="2.5.1" rev-constraint-dynamic="2.5.1" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="json-io" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="34907" time="0" location="C:\Users\MARWA\.ivy2\cache\com.cedarsoftware\json-io\srcs\json-io-2.5.1-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/cedarsoftware/json-io/2.5.1/json-io-2.5.1-sources.jar"/>
+					</artifact>
+					<artifact name="json-io" type="jar" ext="jar" status="no" details="" size="75232" time="0" location="C:\Users\MARWA\.ivy2\cache\com.cedarsoftware\json-io\jars\json-io-2.5.1.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/cedarsoftware/json-io/2.5.1/json-io-2.5.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.jcraft" name="jsch">
+			<revision name="0.1.54" status="release" pubdate="20160903114216" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.jcraft.com/jsch/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="182">
+				<license name="Revised BSD" url="http://www.jcraft.com/jsch/LICENSE.txt"/>
+				<metadata-artifact status="no" details="" size="3138" time="0" location="C:\Users\MARWA\.ivy2\cache\com.jcraft\jsch\ivy-0.1.54.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/jcraft/jsch/0.1.54/jsch-0.1.54.pom"/>
+				<caller organisation="rating_project" name="rating_project$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="0.1.54" rev-constraint-default="0.1.54" rev-constraint-dynamic="0.1.54" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="jsch" type="jar" ext="jar" status="no" details="" size="280515" time="0" location="C:\Users\MARWA\.ivy2\cache\com.jcraft\jsch\jars\jsch-0.1.54.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/jcraft/jsch/0.1.54/jsch-0.1.54.jar"/>
+					</artifact>
+					<artifact name="jsch" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="274824" time="0" location="C:\Users\MARWA\.ivy2\cache\com.jcraft\jsch\srcs\jsch-0.1.54-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/jcraft/jsch/0.1.54/jsch-0.1.54-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.mortbay.jetty" name="jetty-sslengine">
+			<revision name="6.1.26" status="release" pubdate="20101110224548" resolver="public" artresolver="public" homepage="http://jetty.mortbay.org" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="176">
+				<license name="Apache License Version 2" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="successful" details="" size="3801" time="31" location="C:\Users\MARWA\.ivy2\cache\org.mortbay.jetty\jetty-sslengine\ivy-6.1.26.xml" searched="true" original-local-location="C:\Users\MARWA\.ivy2\cache\org.mortbay.jetty\jetty-sslengine\ivy-6.1.26.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/mortbay/jetty/jetty-sslengine/6.1.26/jetty-sslengine-6.1.26.pom"/>
+				<caller organisation="rating_project" name="rating_project$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="6.1.26" rev-constraint-default="6.1.26" rev-constraint-dynamic="6.1.26" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="jetty-sslengine" type="jar" ext="jar" status="no" details="" size="18891" time="0" location="C:\Users\MARWA\.ivy2\cache\org.mortbay.jetty\jetty-sslengine\jars\jetty-sslengine-6.1.26.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/mortbay/jetty/jetty-sslengine/6.1.26/jetty-sslengine-6.1.26.jar"/>
+					</artifact>
+					<artifact name="jetty-sslengine" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="10974" time="0" location="C:\Users\MARWA\.ivy2\cache\org.mortbay.jetty\jetty-sslengine\srcs\jetty-sslengine-6.1.26-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/mortbay/jetty/jetty-sslengine/6.1.26/jetty-sslengine-6.1.26-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.htrace" name="htrace-core4">
+			<revision name="4.0.1-incubating" status="release" pubdate="20150920061706" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://incubator.apache.org/projects/htrace.html" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="174">
+				<metadata-artifact status="no" details="" size="6472" time="0" location="C:\Users\MARWA\.ivy2\cache\org.apache.htrace\htrace-core4\ivy-4.0.1-incubating.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/apache/htrace/htrace-core4/4.0.1-incubating/htrace-core4-4.0.1-incubating.pom"/>
+				<caller organisation="rating_project" name="rating_project$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="4.0.1-incubating" rev-constraint-default="4.0.1-incubating" rev-constraint-dynamic="4.0.1-incubating" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="htrace-core4" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="43158" time="0" location="C:\Users\MARWA\.ivy2\cache\org.apache.htrace\htrace-core4\srcs\htrace-core4-4.0.1-incubating-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/apache/htrace/htrace-core4/4.0.1-incubating/htrace-core4-4.0.1-incubating-sources.jar"/>
+					</artifact>
+					<artifact name="htrace-core4" type="jar" ext="jar" status="no" details="" size="1485102" time="0" location="C:\Users\MARWA\.ivy2\cache\org.apache.htrace\htrace-core4\jars\htrace-core4-4.0.1-incubating.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/apache/htrace/htrace-core4/4.0.1-incubating/htrace-core4-4.0.1-incubating.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.squareup.okhttp" name="okhttp">
+			<revision name="2.4.0" status="release" pubdate="20150523015149" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="167">
+				<metadata-artifact status="no" details="" size="5545" time="0" location="C:\Users\MARWA\.ivy2\cache\com.squareup.okhttp\okhttp\ivy-2.4.0.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/squareup/okhttp/okhttp/2.4.0/okhttp-2.4.0.pom"/>
+				<caller organisation="rating_project" name="rating_project$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="2.4.0" rev-constraint-default="2.4.0" rev-constraint-dynamic="2.4.0" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="okhttp" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="216057" time="0" location="C:\Users\MARWA\.ivy2\cache\com.squareup.okhttp\okhttp\srcs\okhttp-2.4.0-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/squareup/okhttp/okhttp/2.4.0/okhttp-2.4.0-sources.jar"/>
+					</artifact>
+					<artifact name="okhttp" type="jar" ext="jar" status="no" details="" size="319099" time="0" location="C:\Users\MARWA\.ivy2\cache\com.squareup.okhttp\okhttp\jars\okhttp-2.4.0.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/squareup/okhttp/okhttp/2.4.0/okhttp-2.4.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.squareup.okio" name="okio">
+			<revision name="1.4.0" status="release" pubdate="20150516180123" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="168">
+				<metadata-artifact status="no" details="" size="4512" time="0" location="C:\Users\MARWA\.ivy2\cache\com.squareup.okio\okio\ivy-1.4.0.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/squareup/okio/okio/1.4.0/okio-1.4.0.pom"/>
+				<caller organisation="rating_project" name="rating_project$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="1.4.0" rev-constraint-default="1.4.0" rev-constraint-dynamic="1.4.0" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="okio" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="52699" time="0" location="C:\Users\MARWA\.ivy2\cache\com.squareup.okio\okio\srcs\okio-1.4.0-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/squareup/okio/okio/1.4.0/okio-1.4.0-sources.jar"/>
+					</artifact>
+					<artifact name="okio" type="jar" ext="jar" status="no" details="" size="64661" time="0" location="C:\Users\MARWA\.ivy2\cache\com.squareup.okio\okio\jars\okio-1.4.0.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/squareup/okio/okio/1.4.0/okio-1.4.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.holdenkarau" name="spark-testing-base_2.11">
+			<revision name="2.3.0_0.9.0" status="release" pubdate="20180316084208" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/holdenk/spark-testing-base" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="158">
+				<license name="Apache License 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="7972" time="0" location="C:\Users\MARWA\.ivy2\cache\com.holdenkarau\spark-testing-base_2.11\ivy-2.3.0_0.9.0.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/holdenkarau/spark-testing-base_2.11/2.3.0_0.9.0/spark-testing-base_2.11-2.3.0_0.9.0.pom"/>
+				<caller organisation="rating_project" name="rating_project$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="2.3.0_0.9.0" rev-constraint-default="2.3.0_0.9.0" rev-constraint-dynamic="2.3.0_0.9.0" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="spark-testing-base_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="51886" time="156" location="C:\Users\MARWA\.ivy2\cache\com.holdenkarau\spark-testing-base_2.11\srcs\spark-testing-base_2.11-2.3.0_0.9.0-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/holdenkarau/spark-testing-base_2.11/2.3.0_0.9.0/spark-testing-base_2.11-2.3.0_0.9.0-sources.jar"/>
+					</artifact>
+					<artifact name="spark-testing-base_2.11" type="jar" ext="jar" status="no" details="" size="343034" time="0" location="C:\Users\MARWA\.ivy2\cache\com.holdenkarau\spark-testing-base_2.11\jars\spark-testing-base_2.11-2.3.0_0.9.0.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/holdenkarau/spark-testing-base_2.11/2.3.0_0.9.0/spark-testing-base_2.11-2.3.0_0.9.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.eclipse.jetty" name="jetty-util">
+			<revision name="9.3.11.v20160721" status="release" pubdate="20160722033805" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.eclipse.org/jetty" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="166">
+				<metadata-artifact status="no" details="" size="11465" time="0" location="C:\Users\MARWA\.ivy2\cache\org.eclipse.jetty\jetty-util\ivy-9.3.11.v20160721.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/eclipse/jetty/jetty-util/9.3.11.v20160721/jetty-util-9.3.11.v20160721.pom"/>
+				<caller organisation="rating_project" name="rating_project$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="9.3.11.v20160721" rev-constraint-default="9.3.11.v20160721" rev-constraint-dynamic="9.3.11.v20160721" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="jetty-util" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="295662" time="0" location="C:\Users\MARWA\.ivy2\cache\org.eclipse.jetty\jetty-util\srcs\jetty-util-9.3.11.v20160721-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/eclipse/jetty/jetty-util/9.3.11.v20160721/jetty-util-9.3.11.v20160721-sources.jar"/>
+					</artifact>
+					<artifact name="jetty-util" type="jar" ext="jar" status="no" details="" size="431954" time="0" location="C:\Users\MARWA\.ivy2\cache\org.eclipse.jetty\jetty-util\jars\jetty-util-9.3.11.v20160721.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/eclipse/jetty/jetty-util/9.3.11.v20160721/jetty-util-9.3.11.v20160721.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.github.nicolasstucki" name="multisets_2.11">
+			<revision name="0.4" status="release" pubdate="20170107102402" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/nicolasstucki/multisets" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="161">
+				<license name="BSD-style" url="http://www.opensource.org/licenses/bsd-license.php"/>
+				<metadata-artifact status="no" details="" size="2814" time="0" location="C:\Users\MARWA\.ivy2\cache\io.github.nicolasstucki\multisets_2.11\ivy-0.4.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/io/github/nicolasstucki/multisets_2.11/0.4/multisets_2.11-0.4.pom"/>
+				<caller organisation="rating_project" name="rating_project$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="0.4" rev-constraint-default="0.4" rev-constraint-dynamic="0.4" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="multisets_2.11" type="jar" ext="jar" status="no" details="" size="299790" time="0" location="C:\Users\MARWA\.ivy2\cache\io.github.nicolasstucki\multisets_2.11\jars\multisets_2.11-0.4.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/io/github/nicolasstucki/multisets_2.11/0.4/multisets_2.11-0.4.jar"/>
+					</artifact>
+					<artifact name="multisets_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="22216" time="0" location="C:\Users\MARWA\.ivy2\cache\io.github.nicolasstucki\multisets_2.11\srcs\multisets_2.11-0.4-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/io/github/nicolasstucki/multisets_2.11/0.4/multisets_2.11-0.4-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scalatest" name="scalatest_2.11">
+			<revision name="3.0.1" status="release" pubdate="20161110045601" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scalatest.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="159">
+				<license name="the Apache License, ASL Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="5087" time="0" location="C:\Users\MARWA\.ivy2\cache\org.scalatest\scalatest_2.11\ivy-3.0.1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/scalatest/scalatest_2.11/3.0.1/scalatest_2.11-3.0.1.pom"/>
+				<caller organisation="rating_project" name="rating_project$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="3.0.1" rev-constraint-default="3.0.1" rev-constraint-dynamic="3.0.1" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="scalatest_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="1643660" time="0" location="C:\Users\MARWA\.ivy2\cache\org.scalatest\scalatest_2.11\srcs\scalatest_2.11-3.0.1-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/scalatest/scalatest_2.11/3.0.1/scalatest_2.11-3.0.1-sources.jar"/>
+					</artifact>
+					<artifact name="scalatest_2.11" type="jar" ext="jar" status="no" details="" size="10423607" time="0" location="C:\Users\MARWA\.ivy2\cache\org.scalatest\scalatest_2.11\jars\scalatest_2.11-3.0.1.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/scalatest/scalatest_2.11/3.0.1/scalatest_2.11-3.0.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scalacheck" name="scalacheck_2.11">
+			<revision name="1.13.4" status="release" pubdate="20161101151546" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scalacheck.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="162">
+				<license name="BSD-style" url="http://www.opensource.org/licenses/bsd-license.php"/>
+				<metadata-artifact status="no" details="" size="2692" time="0" location="C:\Users\MARWA\.ivy2\cache\org.scalacheck\scalacheck_2.11\ivy-1.13.4.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/scalacheck/scalacheck_2.11/1.13.4/scalacheck_2.11-1.13.4.pom"/>
+				<caller organisation="rating_project" name="rating_project$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="1.13.4" rev-constraint-default="1.13.4" rev-constraint-dynamic="1.13.4" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="scalacheck_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="53555" time="0" location="C:\Users\MARWA\.ivy2\cache\org.scalacheck\scalacheck_2.11\srcs\scalacheck_2.11-1.13.4-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/scalacheck/scalacheck_2.11/1.13.4/scalacheck_2.11-1.13.4-sources.jar"/>
+					</artifact>
+					<artifact name="scalacheck_2.11" type="jar" ext="jar" status="no" details="" size="3093888" time="0" location="C:\Users\MARWA\.ivy2\cache\org.scalacheck\scalacheck_2.11\jars\scalacheck_2.11-1.13.4.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/scalacheck/scalacheck_2.11/1.13.4/scalacheck_2.11-1.13.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-sbt" name="test-interface">
+			<revision name="1.0" status="release" pubdate="20130629004435" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-sbt.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="163">
+				<license name="BSD" url="https://github.com/sbt/test-interface/blob/master/LICENSE"/>
+				<metadata-artifact status="no" details="" size="2621" time="0" location="C:\Users\MARWA\.ivy2\cache\org.scala-sbt\test-interface\ivy-1.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-sbt/test-interface/1.0/test-interface-1.0.pom"/>
+				<caller organisation="rating_project" name="rating_project$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="1.0" rev-constraint-default="1.0" rev-constraint-dynamic="1.0" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="test-interface" type="jar" ext="jar" status="no" details="" size="14755" time="0" location="C:\Users\MARWA\.ivy2\cache\org.scala-sbt\test-interface\jars\test-interface-1.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-sbt/test-interface/1.0/test-interface-1.0.jar"/>
+					</artifact>
+					<artifact name="test-interface" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="18792" time="0" location="C:\Users\MARWA\.ivy2\cache\org.scala-sbt\test-interface\srcs\test-interface-1.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-sbt/test-interface/1.0/test-interface-1.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scalactic" name="scalactic_2.11">
+			<revision name="3.0.1" status="release" pubdate="20161110045324" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scalatest.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="160">
+				<license name="the Apache License, ASL Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="2857" time="0" location="C:\Users\MARWA\.ivy2\cache\org.scalactic\scalactic_2.11\ivy-3.0.1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/scalactic/scalactic_2.11/3.0.1/scalactic_2.11-3.0.1.pom"/>
+				<caller organisation="rating_project" name="rating_project$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="3.0.1" rev-constraint-default="3.0.1" rev-constraint-dynamic="3.0.1" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="scalactic_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="201082" time="0" location="C:\Users\MARWA\.ivy2\cache\org.scalactic\scalactic_2.11\srcs\scalactic_2.11-3.0.1-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/scalactic/scalactic_2.11/3.0.1/scalactic_2.11-3.0.1-sources.jar"/>
+					</artifact>
+					<artifact name="scalactic_2.11" type="jar" ext="jar" status="no" details="" size="740209" time="0" location="C:\Users\MARWA\.ivy2\cache\org.scalactic\scalactic_2.11\jars\scalactic_2.11-3.0.1.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/scalactic/scalactic_2.11/3.0.1/scalactic_2.11-3.0.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.fasterxml.jackson.core" name="jackson-core">
+			<revision name="2.8.8" status="release" pubdate="20170405052329" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/FasterXML/jackson-core" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="156">
+				<metadata-artifact status="no" details="" size="7411" time="0" location="C:\Users\MARWA\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\ivy-2.8.8.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.8.8/jackson-core-2.8.8.pom"/>
+				<caller organisation="rating_project" name="rating_project$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="2.8.8" rev-constraint-default="2.8.8" rev-constraint-dynamic="2.8.8" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="jackson-core" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="294498" time="0" location="C:\Users\MARWA\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\srcs\jackson-core-2.8.8-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.8.8/jackson-core-2.8.8-sources.jar"/>
+					</artifact>
+					<artifact name="jackson-core" type="jar" ext="jar" status="no" details="" size="282438" time="0" location="C:\Users\MARWA\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\jars\jackson-core-2.8.8.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.8.8/jackson-core-2.8.8.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="2.7.9" status="release" pubdate="20170204201844" resolver="sbt-chain" artresolver="sbt-chain" evicted="latest-revision" evicted-reason="" homepage="https://github.com/FasterXML/jackson-core" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="-1">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="7277" time="0" location="C:\Users\MARWA\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\ivy-2.7.9.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.7.9/jackson-core-2.7.9.pom"/>
+				<evicted-by rev="2.8.8"/>
+				<caller organisation="rating_project" name="rating_project$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="2.7.9" rev-constraint-default="2.7.9" rev-constraint-dynamic="2.7.9" callerrev="0.1"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
 		<module organisation="org.apache.spark" name="spark-sql_2.11">
 			<revision name="2.3.0" status="release" pubdate="20180222213243" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://spark.apache.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="132">
 				<license name="Apache 2.0 License" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
@@ -50,21 +293,6 @@
 					</artifact>
 					<artifact name="hppc" type="jar" ext="jar" status="no" details="" size="1671083" time="0" location="C:\Users\MARWA\.ivy2\cache\com.carrotsearch\hppc\jars\hppc-0.7.2.jar">
 						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/carrotsearch/hppc/0.7.2/hppc-0.7.2.jar"/>
-					</artifact>
-				</artifacts>
-			</revision>
-		</module>
-		<module organisation="com.fasterxml.jackson.core" name="jackson-core">
-			<revision name="2.7.9" status="release" pubdate="20170204201844" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/FasterXML/jackson-core" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="156">
-				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
-				<metadata-artifact status="no" details="" size="7277" time="0" location="C:\Users\MARWA\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\ivy-2.7.9.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.7.9/jackson-core-2.7.9.pom"/>
-				<caller organisation="rating_project" name="rating_project$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="2.7.9" rev-constraint-default="2.7.9" rev-constraint-dynamic="2.7.9" callerrev="0.1"/>
-				<artifacts>
-					<artifact name="jackson-core" type="jar" ext="jar" status="no" details="" size="253357" time="0" location="C:\Users\MARWA\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\jars\jackson-core-2.7.9.jar">
-						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.7.9/jackson-core-2.7.9.jar"/>
-					</artifact>
-					<artifact name="jackson-core" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="266605" time="0" location="C:\Users\MARWA\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\srcs\jackson-core-2.7.9-sources.jar">
-						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.7.9/jackson-core-2.7.9-sources.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
@@ -399,6 +627,29 @@
 				</artifacts>
 			</revision>
 		</module>
+		<module organisation="org.scala-lang.modules" name="scala-xml_2.11">
+			<revision name="1.0.5" status="release" pubdate="20150724211224" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="101">
+				<license name="BSD 3-clause" url="http://opensource.org/licenses/BSD-3-Clause"/>
+				<metadata-artifact status="no" details="" size="3175" time="0" location="C:\Users\MARWA\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\ivy-1.0.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.0.5/scala-xml_2.11-1.0.5.pom"/>
+				<caller organisation="rating_project" name="rating_project$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="1.0.5" rev-constraint-default="1.0.5" rev-constraint-dynamic="1.0.5" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="scala-xml_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="109244" time="0" location="C:\Users\MARWA\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\srcs\scala-xml_2.11-1.0.5-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.0.5/scala-xml_2.11-1.0.5-sources.jar"/>
+					</artifact>
+					<artifact name="scala-xml_2.11" type="jar" ext="jar" status="no" details="" size="671138" time="0" location="C:\Users\MARWA\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\jars\scala-xml_2.11-1.0.5.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.0.5/scala-xml_2.11-1.0.5.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="1.0.1" status="release" pubdate="20140416112108" resolver="sbt-chain" artresolver="sbt-chain" evicted="latest-revision" evicted-reason="" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="-1">
+				<license name="BSD 3-clause" url="http://opensource.org/licenses/BSD-3-Clause"/>
+				<metadata-artifact status="no" details="" size="3024" time="0" location="C:\Users\MARWA\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\ivy-1.0.1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.0.1/scala-xml_2.11-1.0.1.pom"/>
+				<evicted-by rev="1.0.5"/>
+				<caller organisation="rating_project" name="rating_project$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="1.0.1" rev-constraint-default="1.0.1" rev-constraint-dynamic="1.0.1" callerrev="0.1"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
 		<module organisation="xml-apis" name="xml-apis">
 			<revision name="1.3.04" status="release" pubdate="20061222143752" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://xml.apache.org/commons/components/external/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="43">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
@@ -411,6 +662,209 @@
 					<artifact name="xml-apis" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="527816" time="0" location="C:\Users\MARWA\.ivy2\cache\xml-apis\xml-apis\srcs\xml-apis-1.3.04-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/xml-apis/xml-apis/1.3.04/xml-apis-1.3.04-sources.jar"/>
 					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.curator" name="curator-recipes">
+			<revision name="2.7.1" status="release" pubdate="20150113143219" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="39">
+				<metadata-artifact status="successful" details="" size="2365" time="31" location="C:\Users\MARWA\.ivy2\cache\org.apache.curator\curator-recipes\ivy-2.7.1.xml" searched="true" original-local-location="C:\Users\MARWA\.ivy2\cache\org.apache.curator\curator-recipes\ivy-2.7.1.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/apache/curator/curator-recipes/2.7.1/curator-recipes-2.7.1.pom"/>
+				<caller organisation="rating_project" name="rating_project$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="2.7.1" rev-constraint-default="2.7.1" rev-constraint-dynamic="2.7.1" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="curator-recipes" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="154195" time="0" location="C:\Users\MARWA\.ivy2\cache\org.apache.curator\curator-recipes\srcs\curator-recipes-2.7.1-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/apache/curator/curator-recipes/2.7.1/curator-recipes-2.7.1-sources.jar"/>
+					</artifact>
+					<artifact name="curator-recipes" type="jar" ext="jar" status="no" details="" size="270342" time="0" location="C:\Users\MARWA\.ivy2\cache\org.apache.curator\curator-recipes\jars\curator-recipes-2.7.1.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/apache/curator/curator-recipes/2.7.1/curator-recipes-2.7.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="2.6.0" status="release" pubdate="20140708050148" resolver="sbt-chain" artresolver="sbt-chain" evicted="latest-revision" evicted-reason="" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="-1">
+				<license name="The Apache Software License, Version 2.0" url="file://C:\Users\MARWA\IdeaProjects\Rating_project/LICENSE"/>
+				<metadata-artifact status="no" details="" size="13694" time="0" location="C:\Users\MARWA\.ivy2\cache\org.apache.curator\curator-recipes\ivy-2.6.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/curator/curator-recipes/2.6.0/curator-recipes-2.6.0.pom"/>
+				<evicted-by rev="2.7.1"/>
+				<caller organisation="rating_project" name="rating_project$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="2.6.0" rev-constraint-default="2.6.0" rev-constraint-dynamic="2.6.0" callerrev="0.1"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.hadoop" name="hadoop-auth">
+			<revision name="2.8.3" status="release" pubdate="20171205102112" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="30">
+				<metadata-artifact status="no" details="" size="51617" time="0" location="C:\Users\MARWA\.ivy2\cache\org.apache.hadoop\hadoop-auth\ivy-2.8.3.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-auth/2.8.3/hadoop-auth-2.8.3.pom"/>
+				<caller organisation="rating_project" name="rating_project$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="2.8.3" rev-constraint-default="2.8.3" rev-constraint-dynamic="2.8.3" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="hadoop-auth" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="102319" time="0" location="C:\Users\MARWA\.ivy2\cache\org.apache.hadoop\hadoop-auth\srcs\hadoop-auth-2.8.3-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-auth/2.8.3/hadoop-auth-2.8.3-sources.jar"/>
+					</artifact>
+					<artifact name="hadoop-auth" type="jar" ext="jar" status="no" details="" size="123169" time="0" location="C:\Users\MARWA\.ivy2\cache\org.apache.hadoop\hadoop-auth\jars\hadoop-auth-2.8.3.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-auth/2.8.3/hadoop-auth-2.8.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="2.6.5" status="release" pubdate="20161003010725" resolver="sbt-chain" artresolver="sbt-chain" evicted="latest-revision" evicted-reason="" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="-1">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="32804" time="0" location="C:\Users\MARWA\.ivy2\cache\org.apache.hadoop\hadoop-auth\ivy-2.6.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-auth/2.6.5/hadoop-auth-2.6.5.pom"/>
+				<evicted-by rev="2.8.3"/>
+				<caller organisation="rating_project" name="rating_project$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="2.6.5" rev-constraint-default="2.6.5" rev-constraint-dynamic="2.6.5" callerrev="0.1"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.curator" name="curator-framework">
+			<revision name="2.7.1" status="release" pubdate="20150113143203" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="35">
+				<metadata-artifact status="successful" details="" size="2164" time="47" location="C:\Users\MARWA\.ivy2\cache\org.apache.curator\curator-framework\ivy-2.7.1.xml" searched="true" original-local-location="C:\Users\MARWA\.ivy2\cache\org.apache.curator\curator-framework\ivy-2.7.1.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/apache/curator/curator-framework/2.7.1/curator-framework-2.7.1.pom"/>
+				<caller organisation="rating_project" name="rating_project$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="2.7.1" rev-constraint-default="2.7.1" rev-constraint-dynamic="2.7.1" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="curator-framework" type="jar" ext="jar" status="no" details="" size="186273" time="0" location="C:\Users\MARWA\.ivy2\cache\org.apache.curator\curator-framework\jars\curator-framework-2.7.1.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/apache/curator/curator-framework/2.7.1/curator-framework-2.7.1.jar"/>
+					</artifact>
+					<artifact name="curator-framework" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="118723" time="0" location="C:\Users\MARWA\.ivy2\cache\org.apache.curator\curator-framework\srcs\curator-framework-2.7.1-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/apache/curator/curator-framework/2.7.1/curator-framework-2.7.1-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="2.6.0" status="release" pubdate="20140708050112" resolver="sbt-chain" artresolver="sbt-chain" evicted="latest-revision" evicted-reason="" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="-1">
+				<license name="The Apache Software License, Version 2.0" url="file://C:\Users\MARWA\IdeaProjects\Rating_project/LICENSE"/>
+				<metadata-artifact status="no" details="" size="13541" time="0" location="C:\Users\MARWA\.ivy2\cache\org.apache.curator\curator-framework\ivy-2.6.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/curator/curator-framework/2.6.0/curator-framework-2.6.0.pom"/>
+				<evicted-by rev="2.7.1"/>
+				<caller organisation="rating_project" name="rating_project$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="2.6.0" rev-constraint-default="2.6.0" rev-constraint-dynamic="2.6.0" callerrev="0.1"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.curator" name="curator-client">
+			<revision name="2.7.1" status="release" pubdate="20150113143145" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="36">
+				<metadata-artifact status="successful" details="" size="2260" time="47" location="C:\Users\MARWA\.ivy2\cache\org.apache.curator\curator-client\ivy-2.7.1.xml" searched="true" original-local-location="C:\Users\MARWA\.ivy2\cache\org.apache.curator\curator-client\ivy-2.7.1.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/apache/curator/curator-client/2.7.1/curator-client-2.7.1.pom"/>
+				<caller organisation="rating_project" name="rating_project$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="2.7.1" rev-constraint-default="2.7.1" rev-constraint-dynamic="2.7.1" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="curator-client" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="53722" time="0" location="C:\Users\MARWA\.ivy2\cache\org.apache.curator\curator-client\srcs\curator-client-2.7.1-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/apache/curator/curator-client/2.7.1/curator-client-2.7.1-sources.jar"/>
+					</artifact>
+					<artifact name="curator-client" type="jar" ext="jar" status="no" details="" size="69500" time="0" location="C:\Users\MARWA\.ivy2\cache\org.apache.curator\curator-client\jars\curator-client-2.7.1.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/apache/curator/curator-client/2.7.1/curator-client-2.7.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="2.6.0" status="release" pubdate="20140708050047" resolver="sbt-chain" artresolver="sbt-chain" evicted="latest-revision" evicted-reason="" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="-1">
+				<license name="The Apache Software License, Version 2.0" url="file://C:\Users\MARWA\IdeaProjects\Rating_project/LICENSE"/>
+				<metadata-artifact status="no" details="" size="13589" time="0" location="C:\Users\MARWA\.ivy2\cache\org.apache.curator\curator-client\ivy-2.6.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/curator/curator-client/2.6.0/curator-client-2.6.0.pom"/>
+				<evicted-by rev="2.7.1"/>
+				<caller organisation="rating_project" name="rating_project$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="2.6.0" rev-constraint-default="2.6.0" rev-constraint-dynamic="2.6.0" callerrev="0.1"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.curator" name="curator-test">
+			<revision name="2.7.1" status="release" pubdate="20150113143129" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="190">
+				<metadata-artifact status="no" details="" size="13546" time="0" location="C:\Users\MARWA\.ivy2\cache\org.apache.curator\curator-test\ivy-2.7.1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/apache/curator/curator-test/2.7.1/curator-test-2.7.1.pom"/>
+				<caller organisation="rating_project" name="rating_project$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="2.7.1" rev-constraint-default="2.7.1" rev-constraint-dynamic="2.7.1" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="curator-test" type="jar" ext="jar" status="no" details="" size="39399" time="0" location="C:\Users\MARWA\.ivy2\cache\org.apache.curator\curator-test\jars\curator-test-2.7.1.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/apache/curator/curator-test/2.7.1/curator-test-2.7.1.jar"/>
+					</artifact>
+					<artifact name="curator-test" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="27606" time="0" location="C:\Users\MARWA\.ivy2\cache\org.apache.curator\curator-test\srcs\curator-test-2.7.1-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/apache/curator/curator-test/2.7.1/curator-test-2.7.1-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.commons" name="commons-math">
+			<revision name="2.2" status="release" pubdate="20110226192444" resolver="public" artresolver="public" homepage="http://commons.apache.org/math/" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="191">
+				<metadata-artifact status="successful" details="" size="11180" time="47" location="C:\Users\MARWA\.ivy2\cache\org.apache.commons\commons-math\ivy-2.2.xml" searched="true" original-local-location="C:\Users\MARWA\.ivy2\cache\org.apache.commons\commons-math\ivy-2.2.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/apache/commons/commons-math/2.2/commons-math-2.2.pom"/>
+				<caller organisation="rating_project" name="rating_project$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="2.2" rev-constraint-default="2.2" rev-constraint-dynamic="2.2" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="commons-math" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="1195132" time="0" location="C:\Users\MARWA\.ivy2\cache\org.apache.commons\commons-math\srcs\commons-math-2.2-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/apache/commons/commons-math/2.2/commons-math-2.2-sources.jar"/>
+					</artifact>
+					<artifact name="commons-math" type="jar" ext="jar" status="no" details="" size="988514" time="0" location="C:\Users\MARWA\.ivy2\cache\org.apache.commons\commons-math\jars\commons-math-2.2.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/apache/commons/commons-math/2.2/commons-math-2.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.nimbusds" name="nimbus-jose-jwt">
+			<revision name="3.9" status="release" pubdate="20150215094921" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://bitbucket.org/connect2id/nimbus-jose-jwt" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="179">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="4000" time="0" location="C:\Users\MARWA\.ivy2\cache\com.nimbusds\nimbus-jose-jwt\ivy-3.9.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/nimbusds/nimbus-jose-jwt/3.9/nimbus-jose-jwt-3.9.pom"/>
+				<caller organisation="rating_project" name="rating_project$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="3.9" rev-constraint-default="3.9" rev-constraint-dynamic="3.9" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="nimbus-jose-jwt" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="145482" time="0" location="C:\Users\MARWA\.ivy2\cache\com.nimbusds\nimbus-jose-jwt\srcs\nimbus-jose-jwt-3.9-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/nimbusds/nimbus-jose-jwt/3.9/nimbus-jose-jwt-3.9-sources.jar"/>
+					</artifact>
+					<artifact name="nimbus-jose-jwt" type="jar" ext="jar" status="no" details="" size="178648" time="0" location="C:\Users\MARWA\.ivy2\cache\com.nimbusds\nimbus-jose-jwt\jars\nimbus-jose-jwt-3.9.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/nimbusds/nimbus-jose-jwt/3.9/nimbus-jose-jwt-3.9.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="net.minidev" name="json-smart">
+			<revision name="1.1.1" status="release" pubdate="20120403114543" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="181">
+				<metadata-artifact status="no" details="" size="6192" time="0" location="C:\Users\MARWA\.ivy2\cache\net.minidev\json-smart\ivy-1.1.1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/net/minidev/json-smart/1.1.1/json-smart-1.1.1.pom"/>
+				<caller organisation="rating_project" name="rating_project$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="1.1.1" rev-constraint-default="1.1.1" rev-constraint-dynamic="1.1.1" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="json-smart" type="jar" ext="jar" status="no" details="" size="51484" time="0" location="C:\Users\MARWA\.ivy2\cache\net.minidev\json-smart\jars\json-smart-1.1.1.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/net/minidev/json-smart/1.1.1/json-smart-1.1.1.jar"/>
+					</artifact>
+					<artifact name="json-smart" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="39393" time="0" location="C:\Users\MARWA\.ivy2\cache\net.minidev\json-smart\srcs\json-smart-1.1.1-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/net/minidev/json-smart/1.1.1/json-smart-1.1.1-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="net.jcip" name="jcip-annotations">
+			<revision name="1.0" status="release" pubdate="20080814084805" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://jcip.net/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="180">
+				<metadata-artifact status="no" details="" size="2241" time="0" location="C:\Users\MARWA\.ivy2\cache\net.jcip\jcip-annotations\ivy-1.0.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/net/jcip/jcip-annotations/1.0/jcip-annotations-1.0.pom"/>
+				<caller organisation="rating_project" name="rating_project$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="1.0" rev-constraint-default="1.0" rev-constraint-dynamic="1.0" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="jcip-annotations" type="jar" ext="jar" status="no" details="" size="2254" time="0" location="C:\Users\MARWA\.ivy2\cache\net.jcip\jcip-annotations\jars\jcip-annotations-1.0.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/net/jcip/jcip-annotations/1.0/jcip-annotations-1.0.jar"/>
+					</artifact>
+					<artifact name="jcip-annotations" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="5002" time="0" location="C:\Users\MARWA\.ivy2\cache\net.jcip\jcip-annotations\srcs\jcip-annotations-1.0-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/net/jcip/jcip-annotations/1.0/jcip-annotations-1.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.httpcomponents" name="httpclient">
+			<revision name="4.5.2" status="release" pubdate="20160221170550" resolver="public" artresolver="public" homepage="http://hc.apache.org/httpcomponents-client" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="79">
+				<metadata-artifact status="successful" details="" size="6393" time="47" location="C:\Users\MARWA\.ivy2\cache\org.apache.httpcomponents\httpclient\ivy-4.5.2.xml" searched="true" original-local-location="C:\Users\MARWA\.ivy2\cache\org.apache.httpcomponents\httpclient\ivy-4.5.2.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.5.2/httpclient-4.5.2.pom"/>
+				<caller organisation="rating_project" name="rating_project$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="4.5.2" rev-constraint-default="4.5.2" rev-constraint-dynamic="4.5.2" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="httpclient" type="jar" ext="jar" status="no" details="" size="736658" time="0" location="C:\Users\MARWA\.ivy2\cache\org.apache.httpcomponents\httpclient\jars\httpclient-4.5.2.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.5.2/httpclient-4.5.2.jar"/>
+					</artifact>
+					<artifact name="httpclient" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="707899" time="0" location="C:\Users\MARWA\.ivy2\cache\org.apache.httpcomponents\httpclient\srcs\httpclient-4.5.2-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.5.2/httpclient-4.5.2-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="4.5" status="release" pubdate="20150531131131" resolver="sbt-chain" artresolver="sbt-chain" evicted="latest-revision" evicted-reason="" homepage="http://hc.apache.org/httpcomponents-client" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="-1">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="9888" time="0" location="C:\Users\MARWA\.ivy2\cache\org.apache.httpcomponents\httpclient\ivy-4.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.5/httpclient-4.5.pom"/>
+				<evicted-by rev="4.5.2"/>
+				<caller organisation="rating_project" name="rating_project$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="4.5" rev-constraint-default="4.5" rev-constraint-dynamic="4.5" callerrev="0.1"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.httpcomponents" name="httpcore">
+			<revision name="4.4.4" status="release" pubdate="20151026181814" resolver="public" artresolver="public" homepage="http://hc.apache.org/httpcomponents-core-ga" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="78">
+				<metadata-artifact status="successful" details="" size="5522" time="47" location="C:\Users\MARWA\.ivy2\cache\org.apache.httpcomponents\httpcore\ivy-4.4.4.xml" searched="true" original-local-location="C:\Users\MARWA\.ivy2\cache\org.apache.httpcomponents\httpcore\ivy-4.4.4.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.4.4/httpcore-4.4.4.pom"/>
+				<caller organisation="rating_project" name="rating_project$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="4.4.4" rev-constraint-default="4.4.4" rev-constraint-dynamic="4.4.4" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="httpcore" type="jar" ext="jar" status="no" details="" size="326724" time="0" location="C:\Users\MARWA\.ivy2\cache\org.apache.httpcomponents\httpcore\jars\httpcore-4.4.4.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.4.4/httpcore-4.4.4.jar"/>
+					</artifact>
+					<artifact name="httpcore" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="405277" time="0" location="C:\Users\MARWA\.ivy2\cache\org.apache.httpcomponents\httpcore\srcs\httpcore-4.4.4-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.4.4/httpcore-4.4.4-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="4.4.1" status="release" pubdate="20150314172955" resolver="sbt-chain" artresolver="sbt-chain" evicted="latest-revision" evicted-reason="" homepage="http://hc.apache.org/httpcomponents-core-ga" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="-1">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="7686" time="0" location="C:\Users\MARWA\.ivy2\cache\org.apache.httpcomponents\httpcore\ivy-4.4.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.4.1/httpcore-4.4.1.pom"/>
+				<evicted-by rev="4.4.4"/>
+				<caller organisation="rating_project" name="rating_project$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="4.4.1" rev-constraint-default="4.4.1" rev-constraint-dynamic="4.4.1" callerrev="0.1"/>
+				<artifacts>
 				</artifacts>
 			</revision>
 		</module>
@@ -927,21 +1381,6 @@
 				</artifacts>
 			</revision>
 		</module>
-		<module organisation="org.scala-lang.modules" name="scala-xml_2.11">
-			<revision name="1.0.1" status="release" pubdate="20140416112108" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="101">
-				<license name="BSD 3-clause" url="http://opensource.org/licenses/BSD-3-Clause"/>
-				<metadata-artifact status="no" details="" size="3024" time="0" location="C:\Users\MARWA\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\ivy-1.0.1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.0.1/scala-xml_2.11-1.0.1.pom"/>
-				<caller organisation="rating_project" name="rating_project$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="1.0.1" rev-constraint-default="1.0.1" rev-constraint-dynamic="1.0.1" callerrev="0.1"/>
-				<artifacts>
-					<artifact name="scala-xml_2.11" type="jar" ext="jar" status="no" details="" size="655685" time="0" location="C:\Users\MARWA\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\jars\scala-xml_2.11-1.0.1.jar">
-						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.0.1/scala-xml_2.11-1.0.1.jar"/>
-					</artifact>
-					<artifact name="scala-xml_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="109171" time="0" location="C:\Users\MARWA\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\srcs\scala-xml_2.11-1.0.1-sources.jar">
-						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.0.1/scala-xml_2.11-1.0.1-sources.jar"/>
-					</artifact>
-				</artifacts>
-			</revision>
-		</module>
 		<module organisation="org.json4s" name="json4s-ast_2.11">
 			<revision name="3.2.11" status="release" pubdate="20141024031004" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/json4s/json4s" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="98">
 				<license name="ASL" url="http://github.com/json4s/json4s/raw/HEAD/LICENSE"/>
@@ -958,16 +1397,23 @@
 			</revision>
 		</module>
 		<module organisation="commons-net" name="commons-net">
-			<revision name="2.2" status="release" pubdate="20101117015516" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/net/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="95">
+			<revision name="2.2" status="release" pubdate="20101117015516" resolver="sbt-chain" artresolver="sbt-chain" evicted="latest-revision" evicted-reason="" homepage="http://commons.apache.org/net/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="-1">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="6524" time="0" location="C:\Users\MARWA\.ivy2\cache\commons-net\commons-net\ivy-2.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-net/commons-net/2.2/commons-net-2.2.pom"/>
+				<evicted-by rev="3.1"/>
 				<caller organisation="rating_project" name="rating_project$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="2.2" rev-constraint-default="2.2" rev-constraint-dynamic="2.2" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="commons-net" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="377467" time="0" location="C:\Users\MARWA\.ivy2\cache\commons-net\commons-net\srcs\commons-net-2.2-sources.jar">
-						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-net/commons-net/2.2/commons-net-2.2-sources.jar"/>
+				</artifacts>
+			</revision>
+			<revision name="3.1" status="release" pubdate="20120214194231" resolver="public" artresolver="public" homepage="http://commons.apache.org/net/" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="95">
+				<metadata-artifact status="successful" details="" size="18417" time="51" location="C:\Users\MARWA\.ivy2\cache\commons-net\commons-net\ivy-3.1.xml" searched="true" original-local-location="C:\Users\MARWA\.ivy2\cache\commons-net\commons-net\ivy-3.1.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/commons-net/commons-net/3.1/commons-net-3.1.pom"/>
+				<caller organisation="rating_project" name="rating_project$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="3.1" rev-constraint-default="3.1" rev-constraint-dynamic="3.1" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="commons-net" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="406713" time="0" location="C:\Users\MARWA\.ivy2\cache\commons-net\commons-net\srcs\commons-net-3.1-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/commons-net/commons-net/3.1/commons-net-3.1-sources.jar"/>
 					</artifact>
-					<artifact name="commons-net" type="jar" ext="jar" status="no" details="" size="212453" time="0" location="C:\Users\MARWA\.ivy2\cache\commons-net\commons-net\jars\commons-net-2.2.jar">
-						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-net/commons-net/2.2/commons-net-2.2.jar"/>
+					<artifact name="commons-net" type="jar" ext="jar" status="no" details="" size="273370" time="0" location="C:\Users\MARWA\.ivy2\cache\commons-net\commons-net\jars\commons-net-3.1.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/commons-net/commons-net/3.1/commons-net-3.1.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
@@ -1182,36 +1628,6 @@
 				</artifacts>
 			</revision>
 		</module>
-		<module organisation="org.apache.httpcomponents" name="httpclient">
-			<revision name="4.5" status="release" pubdate="20150531131131" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://hc.apache.org/httpcomponents-client" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="79">
-				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
-				<metadata-artifact status="no" details="" size="9888" time="0" location="C:\Users\MARWA\.ivy2\cache\org.apache.httpcomponents\httpclient\ivy-4.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.5/httpclient-4.5.pom"/>
-				<caller organisation="rating_project" name="rating_project$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="4.5" rev-constraint-default="4.5" rev-constraint-dynamic="4.5" callerrev="0.1"/>
-				<artifacts>
-					<artifact name="httpclient" type="jar" ext="jar" status="no" details="" size="727567" time="0" location="C:\Users\MARWA\.ivy2\cache\org.apache.httpcomponents\httpclient\jars\httpclient-4.5.jar">
-						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.5/httpclient-4.5.jar"/>
-					</artifact>
-					<artifact name="httpclient" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="706468" time="0" location="C:\Users\MARWA\.ivy2\cache\org.apache.httpcomponents\httpclient\srcs\httpclient-4.5-sources.jar">
-						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.5/httpclient-4.5-sources.jar"/>
-					</artifact>
-				</artifacts>
-			</revision>
-		</module>
-		<module organisation="org.apache.httpcomponents" name="httpcore">
-			<revision name="4.4.1" status="release" pubdate="20150314172955" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://hc.apache.org/httpcomponents-core-ga" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="78">
-				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
-				<metadata-artifact status="no" details="" size="7686" time="0" location="C:\Users\MARWA\.ivy2\cache\org.apache.httpcomponents\httpcore\ivy-4.4.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.4.1/httpcore-4.4.1.pom"/>
-				<caller organisation="rating_project" name="rating_project$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="4.4.1" rev-constraint-default="4.4.1" rev-constraint-dynamic="4.4.1" callerrev="0.1"/>
-				<artifacts>
-					<artifact name="httpcore" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="405124" time="0" location="C:\Users\MARWA\.ivy2\cache\org.apache.httpcomponents\httpcore\srcs\httpcore-4.4.1-sources.jar">
-						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.4.1/httpcore-4.4.1-sources.jar"/>
-					</artifact>
-					<artifact name="httpcore" type="jar" ext="jar" status="no" details="" size="322234" time="0" location="C:\Users\MARWA\.ivy2\cache\org.apache.httpcomponents\httpcore\jars\httpcore-4.4.1.jar">
-						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.4.1/httpcore-4.4.1.jar"/>
-					</artifact>
-				</artifacts>
-			</revision>
-		</module>
 		<module organisation="org.apache.spark" name="spark-unsafe_2.11">
 			<revision name="2.3.0" status="release" pubdate="20180222212951" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://spark.apache.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="76">
 				<license name="Apache 2.0 License" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
@@ -1298,6 +1714,20 @@
 					</artifact>
 					<artifact name="netty-all" type="jar" ext="jar" status="no" details="" size="3780056" time="0" location="C:\Users\MARWA\.ivy2\cache\io.netty\netty-all\jars\netty-all-4.1.17.Final.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/netty/netty-all/4.1.17.Final/netty-all-4.1.17.Final.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-logging" name="commons-logging">
+			<revision name="1.2" status="release" pubdate="20140705201228" resolver="public" artresolver="public" homepage="http://commons.apache.org/proper/commons-logging/" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="175">
+				<metadata-artifact status="successful" details="" size="19206" time="31" location="C:\Users\MARWA\.ivy2\cache\commons-logging\commons-logging\ivy-1.2.xml" searched="true" original-local-location="C:\Users\MARWA\.ivy2\cache\commons-logging\commons-logging\ivy-1.2.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/commons-logging/commons-logging/1.2/commons-logging-1.2.pom"/>
+				<caller organisation="rating_project" name="rating_project$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="1.2" rev-constraint-default="1.2" rev-constraint-dynamic="1.2" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="commons-logging" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="73295" time="0" location="C:\Users\MARWA\.ivy2\cache\commons-logging\commons-logging\srcs\commons-logging-1.2-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/commons-logging/commons-logging/1.2/commons-logging-1.2-sources.jar"/>
+					</artifact>
+					<artifact name="commons-logging" type="jar" ext="jar" status="no" details="" size="61829" time="0" location="C:\Users\MARWA\.ivy2\cache\commons-logging\commons-logging\jars\commons-logging-1.2.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/commons-logging/commons-logging/1.2/commons-logging-1.2.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
@@ -1407,6 +1837,35 @@
 				</artifacts>
 			</revision>
 		</module>
+		<module organisation="junit" name="junit">
+			<revision name="4.12" status="release" pubdate="20141204171743" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://junit.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="164">
+				<license name="Eclipse Public License 1.0" url="http://www.eclipse.org/legal/epl-v10.html"/>
+				<metadata-artifact status="no" details="" size="3221" time="0" location="C:\Users\MARWA\.ivy2\cache\junit\junit\ivy-4.12.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/junit/junit/4.12/junit-4.12.pom"/>
+				<caller organisation="rating_project" name="rating_project$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="4.12" rev-constraint-default="4.12" rev-constraint-dynamic="4.12" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="junit" type="jar" ext="jar" status="no" details="" size="314932" time="0" location="C:\Users\MARWA\.ivy2\cache\junit\junit\jars\junit-4.12.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/junit/junit/4.12/junit-4.12.jar"/>
+					</artifact>
+					<artifact name="junit" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="200355" time="0" location="C:\Users\MARWA\.ivy2\cache\junit\junit\srcs\junit-4.12-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/junit/junit/4.12/junit-4.12-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.hamcrest" name="hamcrest-core">
+			<revision name="1.3" status="release" pubdate="20120709230802" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="165">
+				<metadata-artifact status="no" details="" size="2425" time="0" location="C:\Users\MARWA\.ivy2\cache\org.hamcrest\hamcrest-core\ivy-1.3.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.pom"/>
+				<caller organisation="rating_project" name="rating_project$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="1.3" rev-constraint-default="1.3" rev-constraint-dynamic="1.3" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="hamcrest-core" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="32624" time="0" location="C:\Users\MARWA\.ivy2\cache\org.hamcrest\hamcrest-core\srcs\hamcrest-core-1.3-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3-sources.jar"/>
+					</artifact>
+					<artifact name="hamcrest-core" type="jar" ext="jar" status="no" details="" size="45024" time="0" location="C:\Users\MARWA\.ivy2\cache\org.hamcrest\hamcrest-core\jars\hamcrest-core-1.3.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
 		<module organisation="org.slf4j" name="jul-to-slf4j">
 			<revision name="1.7.16" status="release" pubdate="20160211212724" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="87">
 				<license name="MIT License" url="http://www.opensource.org/licenses/mit-license.php"/>
@@ -1512,20 +1971,6 @@
 				</artifacts>
 			</revision>
 		</module>
-		<module organisation="org.codehaus.jettison" name="jettison">
-			<revision name="1.1" status="release" pubdate="20090420185050" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="63">
-				<metadata-artifact status="no" details="" size="2906" time="0" location="C:\Users\MARWA\.ivy2\cache\org.codehaus.jettison\jettison\ivy-1.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/codehaus/jettison/jettison/1.1/jettison-1.1.pom"/>
-				<caller organisation="rating_project" name="rating_project$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="1.1" rev-constraint-default="1.1" rev-constraint-dynamic="1.1" callerrev="0.1"/>
-				<artifacts>
-					<artifact name="jettison" type="jar" ext="jar" status="no" details="" size="67758" time="0" location="C:\Users\MARWA\.ivy2\cache\org.codehaus.jettison\jettison\jars\jettison-1.1.jar">
-						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/codehaus/jettison/jettison/1.1/jettison-1.1.jar"/>
-					</artifact>
-					<artifact name="jettison" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="63298" time="0" location="C:\Users\MARWA\.ivy2\cache\org.codehaus.jettison\jettison\srcs\jettison-1.1-sources.jar">
-						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/codehaus/jettison/jettison/1.1/jettison-1.1-sources.jar"/>
-					</artifact>
-				</artifacts>
-			</revision>
-		</module>
 		<module organisation="org.apache.hadoop" name="hadoop-mapreduce-client-common">
 			<revision name="2.6.5" status="release" pubdate="20161003012418" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="45">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
@@ -1612,6 +2057,34 @@
 					</artifact>
 					<artifact name="hadoop-yarn-common" type="jar" ext="jar" status="no" details="" size="1629101" time="0" location="C:\Users\MARWA\.ivy2\cache\org.apache.hadoop\hadoop-yarn-common\jars\hadoop-yarn-common-2.6.5.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-yarn-common/2.6.5/hadoop-yarn-common-2.6.5.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.sun.jersey.contribs" name="jersey-guice">
+			<revision name="1.9" status="release" pubdate="20110902132154" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="186">
+				<metadata-artifact status="no" details="" size="5858" time="0" location="C:\Users\MARWA\.ivy2\cache\com.sun.jersey.contribs\jersey-guice\ivy-1.9.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/sun/jersey/contribs/jersey-guice/1.9/jersey-guice-1.9.pom"/>
+				<caller organisation="rating_project" name="rating_project$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="1.9" rev-constraint-default="1.9" rev-constraint-dynamic="1.9" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="jersey-guice" type="jar" ext="jar" status="no" details="" size="14786" time="0" location="C:\Users\MARWA\.ivy2\cache\com.sun.jersey.contribs\jersey-guice\jars\jersey-guice-1.9.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/sun/jersey/contribs/jersey-guice/1.9/jersey-guice-1.9.jar"/>
+					</artifact>
+					<artifact name="jersey-guice" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="12402" time="0" location="C:\Users\MARWA\.ivy2\cache\com.sun.jersey.contribs\jersey-guice\srcs\jersey-guice-1.9-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/sun/jersey/contribs/jersey-guice/1.9/jersey-guice-1.9-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.google.inject.extensions" name="guice-servlet">
+			<revision name="3.0" status="release" pubdate="20110325192252" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="185">
+				<metadata-artifact status="successful" details="" size="915" time="45" location="C:\Users\MARWA\.ivy2\cache\com.google.inject.extensions\guice-servlet\ivy-3.0.xml" searched="true" original-local-location="C:\Users\MARWA\.ivy2\cache\com.google.inject.extensions\guice-servlet\ivy-3.0.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/google/inject/extensions/guice-servlet/3.0/guice-servlet-3.0.pom"/>
+				<caller organisation="rating_project" name="rating_project$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="3.0" rev-constraint-default="3.0" rev-constraint-dynamic="3.0" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="guice-servlet" type="jar" ext="jar" status="no" details="" size="65012" time="0" location="C:\Users\MARWA\.ivy2\cache\com.google.inject.extensions\guice-servlet\jars\guice-servlet-3.0.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/google/inject/extensions/guice-servlet/3.0/guice-servlet-3.0.jar"/>
+					</artifact>
+					<artifact name="guice-servlet" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="50471" time="0" location="C:\Users\MARWA\.ivy2\cache\com.google.inject.extensions\guice-servlet\srcs\guice-servlet-3.0-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/google/inject/extensions/guice-servlet/3.0/guice-servlet-3.0-sources.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
@@ -1708,34 +2181,16 @@
 				</artifacts>
 			</revision>
 		</module>
-		<module organisation="javax.xml.bind" name="jaxb-api">
-			<revision name="2.2.2" status="release" pubdate="20101213044445" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://jaxb.dev.java.net/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="48">
-				<license name="CDDL 1.1" url="https://glassfish.dev.java.net/public/CDDL+GPL_1_1.html"/>
-				<license name="GPL2 w/ CPE" url="https://glassfish.dev.java.net/public/CDDL+GPL_1_1.html"/>
-				<metadata-artifact status="no" details="" size="3033" time="0" location="C:\Users\MARWA\.ivy2\cache\javax.xml.bind\jaxb-api\ivy-2.2.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/javax/xml/bind/jaxb-api/2.2.2/jaxb-api-2.2.2.pom"/>
-				<caller organisation="rating_project" name="rating_project$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="2.2.2" rev-constraint-default="2.2.2" rev-constraint-dynamic="2.2.2" callerrev="0.1"/>
+		<module organisation="com.sun.jersey" name="jersey-client">
+			<revision name="1.9" status="release" pubdate="20110902131806" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="184">
+				<metadata-artifact status="no" details="" size="5021" time="0" location="C:\Users\MARWA\.ivy2\cache\com.sun.jersey\jersey-client\ivy-1.9.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/sun/jersey/jersey-client/1.9/jersey-client-1.9.pom"/>
+				<caller organisation="rating_project" name="rating_project$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="1.9" rev-constraint-default="1.9" rev-constraint-dynamic="1.9" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="jaxb-api" type="jar" ext="jar" status="no" details="" size="105134" time="0" location="C:\Users\MARWA\.ivy2\cache\javax.xml.bind\jaxb-api\jars\jaxb-api-2.2.2.jar">
-						<origin-location is-local="false" location="https://repo1.maven.org/maven2/javax/xml/bind/jaxb-api/2.2.2/jaxb-api-2.2.2.jar"/>
+					<artifact name="jersey-client" type="jar" ext="jar" status="no" details="" size="130458" time="0" location="C:\Users\MARWA\.ivy2\cache\com.sun.jersey\jersey-client\jars\jersey-client-1.9.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/sun/jersey/jersey-client/1.9/jersey-client-1.9.jar"/>
 					</artifact>
-					<artifact name="jaxb-api" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="182496" time="0" location="C:\Users\MARWA\.ivy2\cache\javax.xml.bind\jaxb-api\srcs\jaxb-api-2.2.2-sources.jar">
-						<origin-location is-local="false" location="https://repo1.maven.org/maven2/javax/xml/bind/jaxb-api/2.2.2/jaxb-api-2.2.2-sources.jar"/>
-					</artifact>
-				</artifacts>
-			</revision>
-		</module>
-		<module organisation="javax.xml.stream" name="stax-api">
-			<revision name="1.0-2" status="release" pubdate="20081004195903" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="49">
-				<license name="GNU General Public Library" url="http://www.gnu.org/licenses/gpl.txt"/>
-				<license name="COMMON DEVELOPMENT AND DISTRIBUTION LICENSE (CDDL) Version 1.0" url="http://www.sun.com/cddl/cddl.html"/>
-				<metadata-artifact status="no" details="" size="2684" time="0" location="C:\Users\MARWA\.ivy2\cache\javax.xml.stream\stax-api\ivy-1.0-2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/javax/xml/stream/stax-api/1.0-2/stax-api-1.0-2.pom"/>
-				<caller organisation="rating_project" name="rating_project$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="1.0-2" rev-constraint-default="1.0-2" rev-constraint-dynamic="1.0-2" callerrev="0.1"/>
-				<artifacts>
-					<artifact name="stax-api" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="42699" time="0" location="C:\Users\MARWA\.ivy2\cache\javax.xml.stream\stax-api\srcs\stax-api-1.0-2-sources.jar">
-						<origin-location is-local="false" location="https://repo1.maven.org/maven2/javax/xml/stream/stax-api/1.0-2/stax-api-1.0-2-sources.jar"/>
-					</artifact>
-					<artifact name="stax-api" type="jar" ext="jar" status="no" details="" size="23346" time="0" location="C:\Users\MARWA\.ivy2\cache\javax.xml.stream\stax-api\jars\stax-api-1.0-2.jar">
-						<origin-location is-local="false" location="https://repo1.maven.org/maven2/javax/xml/stream/stax-api/1.0-2/stax-api-1.0-2.jar"/>
+					<artifact name="jersey-client" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="119866" time="0" location="C:\Users\MARWA\.ivy2\cache\com.sun.jersey\jersey-client\srcs\jersey-client-1.9-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/sun/jersey/jersey-client/1.9/jersey-client-1.9-sources.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
@@ -1770,6 +2225,20 @@
 				</artifacts>
 			</revision>
 		</module>
+		<module organisation="commons-daemon" name="commons-daemon">
+			<revision name="1.0.13" status="release" pubdate="20130207062231" resolver="public" artresolver="public" homepage="http://commons.apache.org/daemon/" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="173">
+				<metadata-artifact status="successful" details="" size="4349" time="47" location="C:\Users\MARWA\.ivy2\cache\commons-daemon\commons-daemon\ivy-1.0.13.xml" searched="true" original-local-location="C:\Users\MARWA\.ivy2\cache\commons-daemon\commons-daemon\ivy-1.0.13.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/commons-daemon/commons-daemon/1.0.13/commons-daemon-1.0.13.pom"/>
+				<caller organisation="rating_project" name="rating_project$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="1.0.13" rev-constraint-default="1.0.13" rev-constraint-dynamic="1.0.13" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="commons-daemon" type="jar" ext="jar" status="no" details="" size="24239" time="0" location="C:\Users\MARWA\.ivy2\cache\commons-daemon\commons-daemon\jars\commons-daemon-1.0.13.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/commons-daemon/commons-daemon/1.0.13/commons-daemon-1.0.13.jar"/>
+					</artifact>
+					<artifact name="commons-daemon" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="23192" time="0" location="C:\Users\MARWA\.ivy2\cache\commons-daemon\commons-daemon\srcs\commons-daemon-1.0.13-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/commons-daemon/commons-daemon/1.0.13/commons-daemon-1.0.13-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
 		<module organisation="org.apache.hadoop" name="hadoop-common">
 			<revision name="2.6.5" status="release" pubdate="20161003010854" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="16">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
@@ -1796,66 +2265,6 @@
 					</artifact>
 					<artifact name="htrace-core" type="jar" ext="jar" status="no" details="" size="31212" time="0" location="C:\Users\MARWA\.ivy2\cache\org.htrace\htrace-core\jars\htrace-core-3.0.4.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/htrace/htrace-core/3.0.4/htrace-core-3.0.4.jar"/>
-					</artifact>
-				</artifacts>
-			</revision>
-		</module>
-		<module organisation="org.apache.curator" name="curator-recipes">
-			<revision name="2.6.0" status="release" pubdate="20140708050148" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="39">
-				<license name="The Apache Software License, Version 2.0" url="file://C:\Users\MARWA\IdeaProjects\Rating_project/LICENSE"/>
-				<metadata-artifact status="no" details="" size="13694" time="0" location="C:\Users\MARWA\.ivy2\cache\org.apache.curator\curator-recipes\ivy-2.6.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/curator/curator-recipes/2.6.0/curator-recipes-2.6.0.pom"/>
-				<caller organisation="rating_project" name="rating_project$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="2.6.0" rev-constraint-default="2.6.0" rev-constraint-dynamic="2.6.0" callerrev="0.1"/>
-				<artifacts>
-					<artifact name="curator-recipes" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="143004" time="0" location="C:\Users\MARWA\.ivy2\cache\org.apache.curator\curator-recipes\srcs\curator-recipes-2.6.0-sources.jar">
-						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/curator/curator-recipes/2.6.0/curator-recipes-2.6.0-sources.jar"/>
-					</artifact>
-					<artifact name="curator-recipes" type="jar" ext="jar" status="no" details="" size="248171" time="0" location="C:\Users\MARWA\.ivy2\cache\org.apache.curator\curator-recipes\jars\curator-recipes-2.6.0.jar">
-						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/apache/curator/curator-recipes/2.6.0/curator-recipes-2.6.0.jar"/>
-					</artifact>
-				</artifacts>
-			</revision>
-		</module>
-		<module organisation="org.apache.hadoop" name="hadoop-auth">
-			<revision name="2.6.5" status="release" pubdate="20161003010725" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="30">
-				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
-				<metadata-artifact status="no" details="" size="32804" time="0" location="C:\Users\MARWA\.ivy2\cache\org.apache.hadoop\hadoop-auth\ivy-2.6.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-auth/2.6.5/hadoop-auth-2.6.5.pom"/>
-				<caller organisation="rating_project" name="rating_project$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="2.6.5" rev-constraint-default="2.6.5" rev-constraint-dynamic="2.6.5" callerrev="0.1"/>
-				<artifacts>
-					<artifact name="hadoop-auth" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="75499" time="0" location="C:\Users\MARWA\.ivy2\cache\org.apache.hadoop\hadoop-auth\srcs\hadoop-auth-2.6.5-sources.jar">
-						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-auth/2.6.5/hadoop-auth-2.6.5-sources.jar"/>
-					</artifact>
-					<artifact name="hadoop-auth" type="jar" ext="jar" status="no" details="" size="90610" time="0" location="C:\Users\MARWA\.ivy2\cache\org.apache.hadoop\hadoop-auth\jars\hadoop-auth-2.6.5.jar">
-						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-auth/2.6.5/hadoop-auth-2.6.5.jar"/>
-					</artifact>
-				</artifacts>
-			</revision>
-		</module>
-		<module organisation="org.apache.curator" name="curator-framework">
-			<revision name="2.6.0" status="release" pubdate="20140708050112" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="35">
-				<license name="The Apache Software License, Version 2.0" url="file://C:\Users\MARWA\IdeaProjects\Rating_project/LICENSE"/>
-				<metadata-artifact status="no" details="" size="13541" time="0" location="C:\Users\MARWA\.ivy2\cache\org.apache.curator\curator-framework\ivy-2.6.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/curator/curator-framework/2.6.0/curator-framework-2.6.0.pom"/>
-				<caller organisation="rating_project" name="rating_project$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="2.6.0" rev-constraint-default="2.6.0" rev-constraint-dynamic="2.6.0" callerrev="0.1"/>
-				<artifacts>
-					<artifact name="curator-framework" type="jar" ext="jar" status="no" details="" size="185245" time="0" location="C:\Users\MARWA\.ivy2\cache\org.apache.curator\curator-framework\jars\curator-framework-2.6.0.jar">
-						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/apache/curator/curator-framework/2.6.0/curator-framework-2.6.0.jar"/>
-					</artifact>
-					<artifact name="curator-framework" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="117089" time="0" location="C:\Users\MARWA\.ivy2\cache\org.apache.curator\curator-framework\srcs\curator-framework-2.6.0-sources.jar">
-						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/curator/curator-framework/2.6.0/curator-framework-2.6.0-sources.jar"/>
-					</artifact>
-				</artifacts>
-			</revision>
-		</module>
-		<module organisation="org.apache.curator" name="curator-client">
-			<revision name="2.6.0" status="release" pubdate="20140708050047" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="36">
-				<license name="The Apache Software License, Version 2.0" url="file://C:\Users\MARWA\IdeaProjects\Rating_project/LICENSE"/>
-				<metadata-artifact status="no" details="" size="13589" time="0" location="C:\Users\MARWA\.ivy2\cache\org.apache.curator\curator-client\ivy-2.6.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/curator/curator-client/2.6.0/curator-client-2.6.0.pom"/>
-				<caller organisation="rating_project" name="rating_project$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="2.6.0" rev-constraint-default="2.6.0" rev-constraint-dynamic="2.6.0" callerrev="0.1"/>
-				<artifacts>
-					<artifact name="curator-client" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="53044" time="0" location="C:\Users\MARWA\.ivy2\cache\org.apache.curator\curator-client\srcs\curator-client-2.6.0-sources.jar">
-						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/curator/curator-client/2.6.0/curator-client-2.6.0-sources.jar"/>
-					</artifact>
-					<artifact name="curator-client" type="jar" ext="jar" status="no" details="" size="68866" time="0" location="C:\Users\MARWA\.ivy2\cache\org.apache.curator\curator-client\jars\curator-client-2.6.0.jar">
-						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/apache/curator/curator-client/2.6.0/curator-client-2.6.0.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
@@ -2063,6 +2472,138 @@
 					</artifact>
 					<artifact name="oro" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="239964" time="0" location="C:\Users\MARWA\.ivy2\cache\oro\oro\srcs\oro-2.0.8-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/oro/oro/2.0.8/oro-2.0.8-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="javax.servlet.jsp" name="jsp-api">
+			<revision name="2.1" status="release" pubdate="20060717130956" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="183">
+				<metadata-artifact status="no" details="" size="2216" time="0" location="C:\Users\MARWA\.ivy2\cache\javax.servlet.jsp\jsp-api\ivy-2.1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/javax/servlet/jsp/jsp-api/2.1/jsp-api-2.1.pom"/>
+				<caller organisation="rating_project" name="rating_project$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="2.1" rev-constraint-default="2.1" rev-constraint-dynamic="2.1" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="jsp-api" type="jar" ext="jar" status="no" details="" size="100636" time="0" location="C:\Users\MARWA\.ivy2\cache\javax.servlet.jsp\jsp-api\jars\jsp-api-2.1.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/javax/servlet/jsp/jsp-api/2.1/jsp-api-2.1.jar"/>
+					</artifact>
+					<artifact name="jsp-api" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="208969" time="0" location="C:\Users\MARWA\.ivy2\cache\javax.servlet.jsp\jsp-api\srcs\jsp-api-2.1-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/javax/servlet/jsp/jsp-api/2.1/jsp-api-2.1-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.sun.jersey" name="jersey-server">
+			<revision name="1.9" status="release" pubdate="20110902131728" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="171">
+				<metadata-artifact status="no" details="" size="6305" time="0" location="C:\Users\MARWA\.ivy2\cache\com.sun.jersey\jersey-server\ivy-1.9.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/sun/jersey/jersey-server/1.9/jersey-server-1.9.pom"/>
+				<caller organisation="rating_project" name="rating_project$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="1.9" rev-constraint-default="1.9" rev-constraint-dynamic="1.9" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="jersey-server" type="jar" ext="jar" status="no" details="" size="713089" time="0" location="C:\Users\MARWA\.ivy2\cache\com.sun.jersey\jersey-server\jars\jersey-server-1.9.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/sun/jersey/jersey-server/1.9/jersey-server-1.9.jar"/>
+					</artifact>
+					<artifact name="jersey-server" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="658444" time="0" location="C:\Users\MARWA\.ivy2\cache\com.sun.jersey\jersey-server\srcs\jersey-server-1.9-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/sun/jersey/jersey-server/1.9/jersey-server-1.9-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="asm" name="asm">
+			<revision name="3.1" status="release" pubdate="20080120113126" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="172">
+				<metadata-artifact status="no" details="" size="2832" time="0" location="C:\Users\MARWA\.ivy2\cache\asm\asm\ivy-3.1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/asm/asm/3.1/asm-3.1.pom"/>
+				<caller organisation="rating_project" name="rating_project$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="3.1" rev-constraint-default="3.1" rev-constraint-dynamic="3.1" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="asm" type="jar" ext="jar" status="no" details="" size="43033" time="0" location="C:\Users\MARWA\.ivy2\cache\asm\asm\jars\asm-3.1.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/asm/asm/3.1/asm-3.1.jar"/>
+					</artifact>
+					<artifact name="asm" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="108730" time="0" location="C:\Users\MARWA\.ivy2\cache\asm\asm\srcs\asm-3.1-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/asm/asm/3.1/asm-3.1-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.sun.jersey" name="jersey-json">
+			<revision name="1.9" status="release" pubdate="20110902132700" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="177">
+				<metadata-artifact status="no" details="" size="5826" time="0" location="C:\Users\MARWA\.ivy2\cache\com.sun.jersey\jersey-json\ivy-1.9.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/sun/jersey/jersey-json/1.9/jersey-json-1.9.pom"/>
+				<caller organisation="rating_project" name="rating_project$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="1.9" rev-constraint-default="1.9" rev-constraint-dynamic="1.9" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="jersey-json" type="jar" ext="jar" status="no" details="" size="147952" time="0" location="C:\Users\MARWA\.ivy2\cache\com.sun.jersey\jersey-json\jars\jersey-json-1.9.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/sun/jersey/jersey-json/1.9/jersey-json-1.9.jar"/>
+					</artifact>
+					<artifact name="jersey-json" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="113614" time="0" location="C:\Users\MARWA\.ivy2\cache\com.sun.jersey\jersey-json\srcs\jersey-json-1.9-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/sun/jersey/jersey-json/1.9/jersey-json-1.9-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.sun.xml.bind" name="jaxb-impl">
+			<revision name="2.2.3-1" status="release" pubdate="20110118113154" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://jaxb.java.net/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="178">
+				<license name="CDDL 1.1" url="https://glassfish.java.net/public/CDDL+GPL_1_1.html"/>
+				<license name="GPL2 w/ CPE" url="https://glassfish.java.net/public/CDDL+GPL_1_1.html"/>
+				<metadata-artifact status="no" details="" size="2768" time="0" location="C:\Users\MARWA\.ivy2\cache\com.sun.xml.bind\jaxb-impl\ivy-2.2.3-1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/sun/xml/bind/jaxb-impl/2.2.3-1/jaxb-impl-2.2.3-1.pom"/>
+				<caller organisation="rating_project" name="rating_project$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="2.2.3-1" rev-constraint-default="2.2.3-1" rev-constraint-dynamic="2.2.3-1" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="jaxb-impl" type="jar" ext="jar" status="no" details="" size="890168" time="0" location="C:\Users\MARWA\.ivy2\cache\com.sun.xml.bind\jaxb-impl\jars\jaxb-impl-2.2.3-1.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/sun/xml/bind/jaxb-impl/2.2.3-1/jaxb-impl-2.2.3-1.jar"/>
+					</artifact>
+					<artifact name="jaxb-impl" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="1123574" time="0" location="C:\Users\MARWA\.ivy2\cache\com.sun.xml.bind\jaxb-impl\srcs\jaxb-impl-2.2.3-1-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/sun/xml/bind/jaxb-impl/2.2.3-1/jaxb-impl-2.2.3-1-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="javax.xml.bind" name="jaxb-api">
+			<revision name="2.2.2" status="release" pubdate="20101213044445" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://jaxb.dev.java.net/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="48">
+				<license name="CDDL 1.1" url="https://glassfish.dev.java.net/public/CDDL+GPL_1_1.html"/>
+				<license name="GPL2 w/ CPE" url="https://glassfish.dev.java.net/public/CDDL+GPL_1_1.html"/>
+				<metadata-artifact status="no" details="" size="3033" time="0" location="C:\Users\MARWA\.ivy2\cache\javax.xml.bind\jaxb-api\ivy-2.2.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/javax/xml/bind/jaxb-api/2.2.2/jaxb-api-2.2.2.pom"/>
+				<caller organisation="rating_project" name="rating_project$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="2.2.2" rev-constraint-default="2.2.2" rev-constraint-dynamic="2.2.2" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="jaxb-api" type="jar" ext="jar" status="no" details="" size="105134" time="0" location="C:\Users\MARWA\.ivy2\cache\javax.xml.bind\jaxb-api\jars\jaxb-api-2.2.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/javax/xml/bind/jaxb-api/2.2.2/jaxb-api-2.2.2.jar"/>
+					</artifact>
+					<artifact name="jaxb-api" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="182496" time="0" location="C:\Users\MARWA\.ivy2\cache\javax.xml.bind\jaxb-api\srcs\jaxb-api-2.2.2-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/javax/xml/bind/jaxb-api/2.2.2/jaxb-api-2.2.2-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="javax.xml.stream" name="stax-api">
+			<revision name="1.0-2" status="release" pubdate="20081004195903" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="49">
+				<license name="GNU General Public Library" url="http://www.gnu.org/licenses/gpl.txt"/>
+				<license name="COMMON DEVELOPMENT AND DISTRIBUTION LICENSE (CDDL) Version 1.0" url="http://www.sun.com/cddl/cddl.html"/>
+				<metadata-artifact status="no" details="" size="2684" time="0" location="C:\Users\MARWA\.ivy2\cache\javax.xml.stream\stax-api\ivy-1.0-2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/javax/xml/stream/stax-api/1.0-2/stax-api-1.0-2.pom"/>
+				<caller organisation="rating_project" name="rating_project$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="1.0-2" rev-constraint-default="1.0-2" rev-constraint-dynamic="1.0-2" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="stax-api" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="42699" time="0" location="C:\Users\MARWA\.ivy2\cache\javax.xml.stream\stax-api\srcs\stax-api-1.0-2-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/javax/xml/stream/stax-api/1.0-2/stax-api-1.0-2-sources.jar"/>
+					</artifact>
+					<artifact name="stax-api" type="jar" ext="jar" status="no" details="" size="23346" time="0" location="C:\Users\MARWA\.ivy2\cache\javax.xml.stream\stax-api\jars\stax-api-1.0-2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/javax/xml/stream/stax-api/1.0-2/stax-api-1.0-2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.codehaus.jettison" name="jettison">
+			<revision name="1.1" status="release" pubdate="20090420185050" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="63">
+				<metadata-artifact status="no" details="" size="2906" time="0" location="C:\Users\MARWA\.ivy2\cache\org.codehaus.jettison\jettison\ivy-1.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/codehaus/jettison/jettison/1.1/jettison-1.1.pom"/>
+				<caller organisation="rating_project" name="rating_project$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="1.1" rev-constraint-default="1.1" rev-constraint-dynamic="1.1" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="jettison" type="jar" ext="jar" status="no" details="" size="67758" time="0" location="C:\Users\MARWA\.ivy2\cache\org.codehaus.jettison\jettison\jars\jettison-1.1.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/codehaus/jettison/jettison/1.1/jettison-1.1.jar"/>
+					</artifact>
+					<artifact name="jettison" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="63298" time="0" location="C:\Users\MARWA\.ivy2\cache\org.codehaus.jettison\jettison\srcs\jettison-1.1-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/codehaus/jettison/jettison/1.1/jettison-1.1-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.sun.jersey" name="jersey-core">
+			<revision name="1.9" status="release" pubdate="20110902131655" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="170">
+				<metadata-artifact status="no" details="" size="5460" time="0" location="C:\Users\MARWA\.ivy2\cache\com.sun.jersey\jersey-core\ivy-1.9.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/sun/jersey/jersey-core/1.9/jersey-core-1.9.pom"/>
+				<caller organisation="rating_project" name="rating_project$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="1.9" rev-constraint-default="1.9" rev-constraint-dynamic="1.9" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="jersey-core" type="jar" ext="jar" status="no" details="" size="458739" time="0" location="C:\Users\MARWA\.ivy2\cache\com.sun.jersey\jersey-core\jars\jersey-core-1.9.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/sun/jersey/jersey-core/1.9/jersey-core-1.9.jar"/>
+					</artifact>
+					<artifact name="jersey-core" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="431251" time="0" location="C:\Users\MARWA\.ivy2\cache\com.sun.jersey\jersey-core\srcs\jersey-core-1.9-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/sun/jersey/jersey-core/1.9/jersey-core-1.9-sources.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
@@ -2278,6 +2819,20 @@
 				</artifacts>
 			</revision>
 		</module>
+		<module organisation="org.mortbay.jetty" name="jetty">
+			<revision name="6.1.26" status="release" pubdate="20101110224054" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="169">
+				<metadata-artifact status="successful" details="" size="6259" time="47" location="C:\Users\MARWA\.ivy2\cache\org.mortbay.jetty\jetty\ivy-6.1.26.xml" searched="true" original-local-location="C:\Users\MARWA\.ivy2\cache\org.mortbay.jetty\jetty\ivy-6.1.26.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/mortbay/jetty/jetty/6.1.26/jetty-6.1.26.pom"/>
+				<caller organisation="rating_project" name="rating_project$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="6.1.26" rev-constraint-default="6.1.26" rev-constraint-dynamic="6.1.26" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="jetty" type="jar" ext="jar" status="no" details="" size="539912" time="0" location="C:\Users\MARWA\.ivy2\cache\org.mortbay.jetty\jetty\jars\jetty-6.1.26.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/mortbay/jetty/jetty/6.1.26/jetty-6.1.26.jar"/>
+					</artifact>
+					<artifact name="jetty" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="395643" time="0" location="C:\Users\MARWA\.ivy2\cache\org.mortbay.jetty\jetty\srcs\jetty-6.1.26-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/mortbay/jetty/jetty/6.1.26/jetty-6.1.26-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
 		<module organisation="org.mortbay.jetty" name="jetty-util">
 			<revision name="6.1.26" status="release" pubdate="20101110223810" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="42">
 				<license name="Apache Software License - Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
@@ -2290,6 +2845,17 @@
 					</artifact>
 					<artifact name="jetty-util" type="jar" ext="jar" status="no" details="" size="177131" time="0" location="C:\Users\MARWA\.ivy2\cache\org.mortbay.jetty\jetty-util\jars\jetty-util-6.1.26.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/mortbay/jetty/jetty-util/6.1.26/jetty-util-6.1.26.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.mortbay.jetty" name="servlet-api">
+			<revision name="2.5-20081211" status="release" pubdate="20081211183400" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="192">
+				<metadata-artifact status="no" details="" size="2789" time="0" location="C:\Users\MARWA\.ivy2\cache\org.mortbay.jetty\servlet-api\ivy-2.5-20081211.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/mortbay/jetty/servlet-api/2.5-20081211/servlet-api-2.5-20081211.pom"/>
+				<caller organisation="rating_project" name="rating_project$sources_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="2.5-20081211" rev-constraint-default="2.5-20081211" rev-constraint-dynamic="2.5-20081211" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="servlet-api" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="185847" time="0" location="C:\Users\MARWA\.ivy2\cache\org.mortbay.jetty\servlet-api\srcs\servlet-api-2.5-20081211-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/mortbay/jetty/servlet-api/2.5-20081211/servlet-api-2.5-20081211-sources.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>

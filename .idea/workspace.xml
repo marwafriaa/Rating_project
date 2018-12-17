@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6182e2dc-ad7e-4bab-b8c2-49f565212f64" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/idGeneration/IdGeneration.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/idGeneration/IdGeneration.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/ratingCalculation/RatingCalculation.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/ratingCalculation/RatingCalculation.scala" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -48,7 +48,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/idGeneration/IdGeneration.scala">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
@@ -60,11 +60,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/ratingCalculation/RatingCalculation.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+            <state relative-caret-position="238">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+              <folding>
+                <element signature="e#27#44#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -101,6 +104,7 @@
         <option value="$PROJECT_DIR$/build.sbt" />
         <option value="$PROJECT_DIR$/src/main/scala/utils/Util.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/idGeneration/IdGeneration.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/ratingCalculation/RatingCalculation.scala" />
       </list>
     </option>
   </component>
@@ -181,7 +185,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545045591659" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545045664200" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunDashboard">
@@ -260,7 +264,14 @@
       <option name="project" value="LOCAL" />
       <updated>1545045571282</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add IdGeneration methods to generate idAsInteger">
+      <created>1545045625706</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1545045625706</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -301,7 +312,8 @@
     <MESSAGE value="add spark dependencies" />
     <MESSAGE value="add packages for project structure" />
     <MESSAGE value="add Util for spark configuration" />
-    <option name="LAST_COMMIT_MESSAGE" value="add Util for spark configuration" />
+    <MESSAGE value="add IdGeneration methods to generate idAsInteger" />
+    <option name="LAST_COMMIT_MESSAGE" value="add IdGeneration methods to generate idAsInteger" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -312,20 +324,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="66" lean-forward="true" selection-start-line="8" selection-start-column="66" selection-end-line="8" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/ratingCalculation/RatingCalculation.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/ratingPreparation/RatingPreparation.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -345,6 +343,23 @@
           <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
           <folding>
             <element signature="e#21#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/ratingPreparation/RatingPreparation.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/ratingCalculation/RatingCalculation.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="e#27#44#0" expanded="true" />
           </folding>
         </state>
       </provider>

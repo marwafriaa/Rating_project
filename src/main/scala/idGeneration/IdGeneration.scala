@@ -13,7 +13,7 @@ class IdGeneration {
   def generate_new_id_integers(util : Util,inputFile : String): DataFrame = {
 
     // set the output file path
-    val outputFile = "C:\\Users\\MARWA\\Documents\\workshops\\Projects\\res"
+    val outputFile = System.getProperty("user.dir")
 
     // Load our input data.
     val df = util.spark.read.format("csv").option("header", "false").load(inputFile)
